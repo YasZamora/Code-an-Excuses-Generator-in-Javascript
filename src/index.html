@@ -14,16 +14,26 @@
   </head>
   <body>
     <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
-      </div>
+      <p id="excuse">My dog ate my homeworkx</p>
     </div>
+    <script>
+      let who = ["the dog", "my granma", "his turtle", "my bird"];
+      let what = ["eat", "pissed", "crushed", "broked"];
+      let when = [
+        "before the class",
+        "right in time",
+        "when I finished",
+        "during my lunch",
+        "while I was praying",
+      ];
+      let randomnumber1 = Math.floor(Math.random() * 3);
+      let randomnumber2 = Math.floor(Math.random() * 3);
+      let randomnumber3 = Math.floor(Math.random() * 4);
+      function load() {
+       document.getElementById("excuse").innerText = who[randomnumber1] +" "+ what[randomnumber2] +" "+ when[randomnumber3];
+      }
+      window.onload = load;
+      document.getElementById("excuse").innerText = who[randomnumber1] +" "+ what[randomnumber2] +" "+ when[randomnumber3];
+    </script>
   </body>
 </html>
